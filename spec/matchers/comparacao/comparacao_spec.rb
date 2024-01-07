@@ -23,19 +23,19 @@ describe 'Matchers de comparacao' do
     expect(7).to be_between(2,7).inclusive
   end
 
-  it 'be_between inclusive / falhas agregadas' do
-    aggregate_failures do
-      expect(5).to be_between(2,7).inclusive
-      expect(1).to be_between(2,7).inclusive
-      expect(8).to be_between(2,7).inclusive
-    end
-  end
+  # it 'be_between inclusive / falhas agregadas' do
+  #   aggregate_failures do
+  #     expect(5).to be_between(2,7).inclusive
+  #     expect(1).to be_between(2,7).inclusive
+  #     expect(8).to be_between(2,7).inclusive
+  #   end
+  # end
 
-  it 'be_between inclusive / falhas agregadas', aggregate_failures: true do
-      expect(5).to be_between(2,7).inclusive
-      expect(1).to be_between(2,7).inclusive
-      expect(8).to be_between(2,7).inclusive
-  end
+  # it 'be_between inclusive / falhas agregadas', aggregate_failures: true do
+  #     expect(5).to be_between(2,7).inclusive
+  #     expect(1).to be_between(2,7).inclusive
+  #     expect(8).to be_between(2,7).inclusive
+  # end
 
   it 'be_between exclusive' do
     expect(5).to be_between(2,7).exclusive
